@@ -1,3 +1,164 @@
+/****************************************************************************
+Colors: 
+Blue: #001EFF
+Purple: #F000FF
+yellow: #FFE700
+green:#74EE15
+light-blue: #4DEEEA
+****************************************************************************/
+
 body{
-        
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;        
 }
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: #FFFF9E;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#set-header{
+    background-color: #F000FF;
+    width: 100%;
+    color: #FFE700;
+   
+    
+}
+#set-header h1 {
+    text-align: center;    
+ }
+
+ #main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 3px solid #F000FF;
+ }
+
+ #left-aside-bar{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+ }
+
+#right-aside-bar{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+ }
+ .aside-bar-div {
+    width: 98%;
+    height: fit-content;
+    background-color: #001EFF;
+    color: white;
+    margin-top: 2px;
+ }
+
+ /********************************Card design settings ********************************/
+ .cards-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 30%;
+ }
+
+ .cards-container-header{
+    background-color: #F000FF;
+    color:#FFFF9E;
+    margin: 0;
+ }
+
+ .cards{
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ .cards-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 2px;
+    border: 2px solid #F000FF;
+ }
+ 
+ .card-box{
+    border: 1px solid #001EFF;
+    width: 32%;
+    height: 450px;
+    background-color: #001EFF;
+    color: white;
+    
+ }
+
+ .card-title{
+
+ }
+ .card-body{
+    width: 100%;
+    height: 200px;
+    border: 1px solid white;
+
+ }
+ .card-footer{
+
+ }
+
+
+
+
+
+
+ /********************************FOOTER ********************************/
+ .footer{
+        background-color: #F000FF;
+        color:#FFFF9E;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************MOBILE SETTINGS ********************************/
+/* small phones  */
+@media only screen and (max-width:768px){
+    #container{
+        margin: 0;       
+    }
+
+    #set-header h1 {
+        text-align: center;    
+     }
+    
+     #main-content{
+        flex-direction: column;
+     }
+
+     .right-aside-bar{
+        
+
+     }
+
+     .cards{
+        flex-direction: column;
+     }
+
+    
+}
+
+
+
+ /*********************** Medium devices (landscape tablets, 768px and up) *********************************/
+ @media only screen and (min-width: 768px) {
+
+ }
